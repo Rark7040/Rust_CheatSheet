@@ -4,6 +4,7 @@ mod array;
 mod hash_map;
 mod vec;
 mod closure;
+mod tup;
 
 fn main() {
     cast::cast();
@@ -11,4 +12,5 @@ fn main() {
     hash_map::hashMap();
     vec::vec();
     closure::closure();
+    tup::tup();
 }
