@@ -6,6 +6,7 @@ mod vec;
 mod closure;
 mod tup;
 mod _macro;
+mod _if;
 
 fn main() {
     cast::cast();
@@ -15,4 +16,5 @@ fn main() {
     closure::closure();
     tup::tup();
     _macro::_macro();
+    _if::_if("Hello");
 }
