@@ -3,10 +3,12 @@ mod cast;
 mod array;
 mod hash_map;
 mod vec;
+mod closure;
 
 fn main() {
     cast::cast();
     array::array();
     hash_map::hashMap();
     vec::vec();
+    closure::closure();
 }
