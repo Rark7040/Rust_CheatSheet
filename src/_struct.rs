@@ -1,6 +1,6 @@
 use std::fmt::{Debug, Formatter, Result};
 
-struct Vector3{
+pub struct Vector3{
     x: i32,
     y: i32,
     z: i32
