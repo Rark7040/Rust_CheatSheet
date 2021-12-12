@@ -7,6 +7,7 @@ mod closure;
 mod tup;
 mod _macro;
 mod _if;
+mod _struct;
 
 fn main() {
     cast::cast();
@@ -17,4 +18,5 @@ fn main() {
     tup::tup();
     _macro::_macro();
     _if::_if("Hello");
+    _struct::_struct();
 }
