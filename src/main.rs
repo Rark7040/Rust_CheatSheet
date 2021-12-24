@@ -8,6 +8,7 @@ mod tup;
 mod _macro;
 mod _if;
 mod _struct;
+mod option;
 
 fn main() {
     cast::cast();
@@ -19,4 +20,5 @@ fn main() {
     _macro::_macro();
     _if::_if("Hello");
     _struct::_struct();
+    option::option();
 }

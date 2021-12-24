@@ -7,9 +7,9 @@ pub struct Vector3{
 }
 impl Vector3{
     pub fn new(x: i32, y:i32, z:i32)->Vector3 {Vector3{x, y, z}}
-    pub fn get_x(&self)->&i32 {&self.x}
-    pub fn get_y(&self)->&i32 {&self.y}
-    pub fn get_z(&self)->&i32 {&self.z}
+    //pub fn get_x(&self)->&i32 {&self.x}
+    //pub fn get_y(&self)->&i32 {&self.y}
+    //pub fn get_z(&self)->&i32 {&self.z}
 }
 
 impl Debug for Vector3{
