@@ -22,6 +22,12 @@ impl Debug for Vector3{
     }
 }
 
+impl Drop for Vector3{
+    fn drop(&mut self){//destruct
+        println!("on drop...");
+    }
+}
+
 pub fn _struct(){
     let v = Vector3::new(10, 30, 10);
     println!("{:?}", v);
