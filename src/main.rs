@@ -9,6 +9,7 @@ mod _macro;
 mod _if;
 mod _struct;
 mod option;
+mod iterator;
 
 fn main() {
     cast::cast();
@@ -21,4 +22,5 @@ fn main() {
     _if::_if("Hello");
     _struct::_struct();
     option::option();
+    iterator::iterator();
 }
