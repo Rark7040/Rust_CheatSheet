@@ -11,6 +11,7 @@ mod _struct;
 mod option;
 mod iterator;
 mod result;
+mod _box;
 
 fn main() {
     cast::cast();
@@ -25,4 +26,5 @@ fn main() {
     option::option();
     iterator::iterator();
     result::result();
+    _box::_box();
 }
