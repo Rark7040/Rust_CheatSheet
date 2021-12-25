@@ -10,6 +10,7 @@ mod _if;
 mod _struct;
 mod option;
 mod iterator;
+mod result;
 
 fn main() {
     cast::cast();
@@ -23,4 +24,5 @@ fn main() {
     _struct::_struct();
     option::option();
     iterator::iterator();
+    result::result();
 }
