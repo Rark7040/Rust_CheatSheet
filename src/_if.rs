@@ -1,10 +1,9 @@
 pub fn _if(arg: &str){
-  if arg == "Hello"{
-      let mut msg = arg.to_string();
-      msg.push_str(", World!");
-      println!("{}", msg);
+    let msg: String  = if arg == "Hello"{
+        arg.to_string()
 
-  }else{
-      println!("lol");
-  }
+    }else{
+        String::from("lol")
+    };
+    println!("{:?}", msg);
 }
