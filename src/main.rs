@@ -12,6 +12,9 @@ mod option;
 mod iterator;
 mod result;
 mod _box;
+mod _loop;
+mod _for;
+mod _enum;
 
 fn main() {
     cast::cast();
@@ -27,4 +30,7 @@ fn main() {
     iterator::iterator();
     result::result();
     _box::_box();
+    _loop::_loop();
+    _for::_for();
+    _enum::_enum();
 }
