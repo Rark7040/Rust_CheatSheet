@@ -15,6 +15,7 @@ mod _box;
 mod _loop;
 mod _for;
 mod _enum;
+mod _range;
 
 fn main() {
     cast::cast();
@@ -33,4 +34,5 @@ fn main() {
     _loop::_loop();
     _for::_for();
     _enum::_enum();
+    _range::_range();
 }
