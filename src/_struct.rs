@@ -11,10 +11,9 @@ pub struct Position{
     world: String
 }
 
-
 impl Vector3{
     pub fn _get_instance(opt_x: Option<i32>, opt_y: Option<i32>, opt_z: Option<i32>)->Vector3{
-        Vector3{x: get_val(opt_x), y: get_val(opt_y), z: get_val(opt_z)}
+        Vector3{x: Vector3::_get_val(opt_x), y: Vector3::_get_val(opt_y), z: Vector3::_get_val(opt_z)}
     }
     pub fn new(x: i32, y: i32, z: i32)->Vector3{Vector3{x, y, z}}
     pub fn _get_x(&self)->&i32 {&self.x}
@@ -23,15 +22,13 @@ impl Vector3{
     pub fn _set_x(&mut self, new_x: i32){self.x = new_x;}
     pub fn _set_y(&mut self, new_y: i32){self.y = new_y;}
     pub fn _set_z(&mut self, new_z: i32){self.z = new_z;}
-}
-
-fn get_val(opt: Option<i32>)->i32{
-    match opt{
-        Some(x) => x,
-        None => 0
+    fn _get_val(opt: Option<i32>)->i32{
+        match opt{
+            Some(x) => x,
+            None => 0
+        }
     }
 }
-
 
 impl Position{
     pub fn new(x: i32, y: i32, z: i32, world: String)->Position{
@@ -43,16 +40,6 @@ impl Position{
     pub fn _get_vec_mut(&mut self)->&mut Vector3{&mut self.vec}
     pub fn _get_world(&self)->&String{&self.world}
     pub fn _set_world(&mut self, new_world: String){self.world = new_world;}
-}
-
-impl Debug for Vector3{
-    fn fmt(&self, f: &mut Formatter<'_>) -> Result {
-        f.debug_struct("Vector3")
-            .field("x", &self.x)
-            .field("y", &self.y)
-            .field("z", &self.z)
-            .finish()
-    }
 }
 
 impl Debug for Position{
