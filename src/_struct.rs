@@ -60,8 +60,10 @@ impl Drop for Vector3{
 }
 
 pub fn _struct(){
-    let mut pos = Position::new(10, 30, 10, String::from("World"));
-    pos._get_vec_mut()._set_x(50);
-    pos._set_world(String::from("World_copied"));
-    println!("{:?}", pos);
+    {
+        let mut pos = Position::new(10, 30, 10, String::from("World"));
+        pos._get_vec_mut()._set_x(50);
+        pos._set_world(String::from("World_copied"));
+        println!("{:?}", pos);
+    }
 }
