@@ -1,6 +1,6 @@
 #![allow(non_snake_case)]
 mod mods;
-use mods::{*};
+use mods::*;
 
 fn main() {
     cast::cast();
