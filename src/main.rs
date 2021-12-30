@@ -1,22 +1,6 @@
 #![allow(non_snake_case)]
-mod cast;
-mod array;
-mod hash_map;
-mod vec;
-mod closure;
-mod tup;
-mod _macro;
-mod _if;
-mod _struct;
-mod option;
-mod iterator;
-mod result;
-mod _box;
-mod _loop;
-mod _for;
-mod _enum;
-mod _range;
-mod _thread;
+mod mods;
+use mods::{*};
 
 fn main() {
     cast::cast();
